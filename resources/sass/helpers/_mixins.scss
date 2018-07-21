@@ -5,19 +5,19 @@
     -o-#{$property} : $values;
     #{$property} : $values;
 }
-
+//media min-width
 @mixin mediaMin($value){
     @media screen and(min-width: #{$value}){
         @content;
     }
 }
-
+//media max-width
 @mixin mediaMax($value){
     @media screen and(max-width: #{$value} ){
         @content;
     }
 }
-
+//media min-width and max-width
 @mixin mediaMinMax($minValue, $maxValue){
     @media screen and (min-width: #{$minValue}) and (max-width: #{maxValue}) {
         @content;

@@ -1,3 +1,4 @@
+//calc system
 @function calc($target, $container) {
-    @return calc-percent($target, $container);
+    @return ($target / $container) * 100%;
 }
