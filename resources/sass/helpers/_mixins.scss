@@ -6,4 +6,20 @@
     #{$property} : $values;
 }
 
+@mixin mediaMin($value){
+    @media screen and(min-width: #{$value}){
+        @content;
+    }
+}
 
+@mixin mediaMax($value){
+    @media screen and(max-width: #{$value} ){
+        @content;
+    }
+}
+
+@mixin mediaMinMax($minValue, $maxValue){
+    @media screen and (min-width: #{$minValue}) and (max-width: #{maxValue}) {
+        @content;
+    }
+}
