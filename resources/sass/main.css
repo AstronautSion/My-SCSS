@@ -889,7 +889,6 @@ input[type=checkbox],
 input[type=radio],
 select {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -994,7 +993,8 @@ input:disabled {
   display: inline-block;
   min-width: 20px;
   height: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   vertical-align: middle;
 }
 
@@ -1019,8 +1019,10 @@ input:disabled {
   border: 1px solid #E5E5E5;
   border-radius: 2px;
   cursor: pointer;
+  -webkit-transition: all .3s;
   transition: all .3s;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .form-check input {
@@ -1034,7 +1036,8 @@ input:disabled {
 .form-check input:checked + label:before {
   background-color: #0558a5;
   border: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: 0;
 }
 
@@ -1061,7 +1064,8 @@ input:disabled {
   border: 2px solid #E5E5E5;
   border-top-style: none;
   border-right-style: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .form-check.checkbox input:checked + label:after {
@@ -1079,7 +1083,8 @@ input:disabled {
   height: 6px;
   background-color: #ddd;
   border-radius: 50%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .form-check.radio input:checked + label:after {
@@ -1103,6 +1108,7 @@ input:disabled {
 }
 
 .switch input[type=checkbox]:checked + label {
+  -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   background-color: #0558a5;
 }
@@ -1122,6 +1128,7 @@ input:disabled {
 }
 
 .switch label {
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   position: absolute;
   top: 0;
@@ -1136,6 +1143,7 @@ input:disabled {
 }
 
 .switch label:after {
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   content: '';
   position: absolute;
@@ -1145,7 +1153,8 @@ input:disabled {
   height: 19px;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 /* File Uploads
@@ -1176,7 +1185,8 @@ input:disabled {
   border-radius: .25em;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .input-file .upload-name {
@@ -1193,7 +1203,8 @@ input:disabled {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Buttons
@@ -1218,12 +1229,8 @@ input[type="submit"] {
   border-radius: .3em;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-box-shadow: 0.1em 0.1em 0.7em rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0.1em 0.1em 0.7em rgba(0, 0, 0, 0.4);
   -ms-box-shadow: 0.1em 0.1em 0.7em rgba(0, 0, 0, 0.4);
   -o-box-shadow: 0.1em 0.1em 0.7em rgba(0, 0, 0, 0.4);
   box-shadow: 0.1em 0.1em 0.7em rgba(0, 0, 0, 0.4);
@@ -1241,7 +1248,6 @@ input[type="submit"] {
 
 .btn:hover, .btn:active, .btn:focus {
   -webkit-box-shadow: 0.3em 0.3em 0.8em rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0.3em 0.3em 0.8em rgba(0, 0, 0, 0.4);
   -ms-box-shadow: 0.3em 0.3em 0.8em rgba(0, 0, 0, 0.4);
   -o-box-shadow: 0.3em 0.3em 0.8em rgba(0, 0, 0, 0.4);
   box-shadow: 0.3em 0.3em 0.8em rgba(0, 0, 0, 0.4);
@@ -1266,7 +1272,6 @@ input[type="submit"] {
   float: left;
   margin-right: 3%;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
