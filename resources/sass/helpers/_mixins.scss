@@ -5,21 +5,28 @@
     -o-#{$property} : $values;
     #{$property} : $values;
 }
+@mixin createBtn($color){
+    background-color:$color;
+    border-color:$color;
+    &:hover, &:active, &:focus{
+        background-color: $color - ($color / 10);
+    }
+}
 //media min-width
 @mixin mediaMin($value){
-    @media screen and(min-width: #{$value}){
+    @media screen and (min-width:#{$value}px){
         @content;
     }
 }
 //media max-width
 @mixin mediaMax($value){
-    @media screen and(max-width: #{$value} ){
+    @media screen and (max-width:#{$value}px){
         @content;
     }
 }
 //media min-width and max-width
 @mixin mediaMinMax($minValue, $maxValue){
-    @media screen and (min-width: #{$minValue}) and (max-width: #{maxValue}) {
+    @media screen and (min-width:#{$minValue}px) and (max-width:#{$maxValue}px) {
         @content;
     }
 }

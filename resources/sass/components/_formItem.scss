@@ -11,9 +11,9 @@ textarea{
     display:inline-block; 
     vertical-align:middle; 
     white-space:normal; 
-    background:none; 
-    line-height:1; 
-    font-size:1rem;
+    background:none;
+    line-height:1;
+    font-size:rem(14);
 }
 
 input:focus,
@@ -60,6 +60,12 @@ input[type=search]{
 
 /* input
 -----------------------------------------------*/
+input{
+    background-repeat: no-repeat; 
+    background-position: right 1rem center; 
+    background-size: 0.75rem;
+}
+
 input[type=text],
 input[type=password],
 input[type=data], 
@@ -77,27 +83,16 @@ input[type=week]{
     display:block; 
 }
 
-input{
-    background-repeat: no-repeat; 
-    background-position: right 1rem center; 
-    background-size: 0.75rem;
-
-    &:disabled{
-        background-color:#f8f8f8; 
-        cursor: not-allowed;
-    }
-}
-
 .input-label{
     display:block; 
-    font-size:1.1rem; 
+    font-size:rem(16); 
     font-weight:400; 
     padding-bottom:.5rem;
 }
 .help-text{
     display:block; 
     margin-top: 0.7rem; 
-    font-size:0.8rem; 
+    font-size:rem(14); 
     font-weight:normal;
 }
 
@@ -228,7 +223,6 @@ input{
             background-color:#fff;
         }
     }
-
 }
 
 
@@ -290,7 +284,6 @@ input{
 
 /* File Uploads
 -----------------------------------------------*/
-
 .input-file{
     &:after{
         @extend %clearFix;

@@ -2,3 +2,20 @@
 @function calc($target, $container) {
     @return ($target / $container) * 100%;
 }
+
+@function rem($n: $rootPx){
+    @return  #{$n / $rootPx}rem;
+}
+
+@function em($n : $rootPx){
+    @return  #{$n / $rootPx}em;
+}
+
+@function per($n : 100){
+    @return '#{$n / 100 * 100}%';
+}
+
+@function darkRGB($color){
+    @return $color - ($color / 10);
+}
+ 

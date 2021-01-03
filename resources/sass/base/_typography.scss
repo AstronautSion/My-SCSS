@@ -1,0 +1,13 @@
+
+//----------- rem 단위설정 ----------------//
+
+$rootPx : 16; //px
+
+//----------- rem 단위설정 ----------------//
+
+$fontSizeUnit : 1;
+@for $item from 100 through $fontSizeUnit{
+    $item : $item * 1;
+    .font-#{$item} { font-size: rem($item);}
+}
+

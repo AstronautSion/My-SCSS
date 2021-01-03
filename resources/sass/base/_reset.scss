@@ -1,4 +1,10 @@
 html,
+body{
+    font-size: #{$rootPx}px;
+    font-family: 'Titillium Web', 'Nanum Gothic', '굴림', sans-serif;
+}
+
+html,
 body,
 div,
 span,
@@ -74,8 +80,7 @@ video {
     vertical-align: middle;
     background: transparent;
     line-height: 1;
-    font-size: 14px;
-    font-family: 'Titillium Web', 'Nanum Gothic', '굴림', sans-serif;
+    
 }
 
 article,
@@ -91,15 +96,6 @@ nav,
 section,
 small {
     display: block;
-}
-
-input,
-textarea,
-select,
-button,
-table {
-    font-size: 14px;
-    line-height: 1;
 }
 
 blockquote,
@@ -182,4 +178,18 @@ a:focus {
 
 caption.blind {
     position: static;
+}
+
+
+.div:after{
+    content: '#{rem(12)}';
+    display:block;
+    width:100%;
+}
+
+.div2{
+    font-size:rem(14);
+    width:em(400);
+    height:em(400);
+    background-color:$color-red-pink;
 }

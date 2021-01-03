@@ -1,36 +1,36 @@
+
 .btn{
+    transition: all .3s;
     display:inline-block;
     padding:.8em 2em;
     text-align:center;
     vertical-align: middle;
-    font-size:1rem;
     font-weight:normal;
     color: $color-dark;   
     border:1px solid $color-grey;
     border-radius: .3em;
     outline:none;
+    cursor:pointer;
     @include freeFix(transition, all .2s ease-in-out);
-    @include freeFix (box-shadow, .1em .1em .7em rgba(0,0,0,.4));
-    &-small{
-        padding:.5em 1.5em; 
-        font-size:.9rem;
-    }
-    &-large{
-        padding:1em 2.4em;
-        font-size:1.1rem;
-    }
+    @include freeFix (box-shadow, .1em .1em .7em rgba(0,0,0,.2));
     &:hover, &:active, &:focus{
-        @include freeFix(box-shadow, .3em .3em .8em  rgba(0,0,0,.4));
-        
+        @include freeFix(box-shadow, .2em .2em .8em  rgba(0,0,0,.3));    
     }
+    &-sm{
+        padding:.5em 1.5em; 
+        font-size: rem(14);
+    }
+    &-lg{
+        padding:1em 2.4em;
+        font-size: rem(18);
+    }
+    
     &-default{
-        background-color:$color-default;
-        border-color:$color-default;
+        @include createBtn($color-default);
     }
     &-blue{
-        background-color:$color-blue;
+        @include createBtn($color-blue);
         color:$color-white;
-        border-color:$color-blue;
     }
     //btn custom
 }

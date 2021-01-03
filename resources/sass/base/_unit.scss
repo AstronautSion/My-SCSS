@@ -1,28 +1,44 @@
 $unit : 20;
 @for $i from 1 through $unit{
     $i : $i * 5;
-    .margin-top-#{$i} { 
+    .mx-#{$i} {
+        margin-left: $i * 1px;
+        margin-right: $i * 1px;
+    }
+    .my-#{$i} {
+        margin-top: $i * 1px;
+        margin-bottom: $i * 1px;
+    }
+    .mt-#{$i} { 
         margin-top : $i * 1px;
     }
-    .margin-right-#{$i} {
+    .mr-#{$i} {
         margin-right : $i * 1px;
     }
-    .margin-bottom-#{$i} {
+    .mb-#{$i} {
         margin-bottom : $i * 1px;
     }
-    .margin-left-#{$i} {
+    .ml-#{$i} {
         margin-left : $i * 1px;
     }
-    .padding-top-#{$i} { 
+    .px-#{$i} { 
+        padding-left: $i * 1px;
+        padding-right: $i * 1px;
+    }
+    .py-#{$i}{
+        padding-top: $i * 1px;
+        padding-bottom: $i * 1px;
+    }
+    .pt-#{$i} { 
         padding-top : $i * 1px;
     }
-    .padding-right-#{$i} {
+    .pr-#{$i} {
         padding-right : $i * 1px;
     }
-    .padding-bottom-#{$i} {
+    .pb-#{$i} {
         padding-bottom : $i * 1px;
     }
-    .padding-left-#{$i} {
+    .pl-#{$i} {
         padding-left : $i * 1px;
     }
 }
