@@ -179,17 +179,3 @@ a:focus {
 caption.blind {
     position: static;
 }
-
-
-.div:after{
-    content: '#{rem(12)}';
-    display:block;
-    width:100%;
-}
-
-.div2{
-    font-size:rem(14);
-    width:em(400);
-    height:em(400);
-    background-color:$color-red-pink;
-}
